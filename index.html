@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="c0header">
+	<header class="c0header fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand c0titlenav" href="#">Doggy Shop</a>
@@ -29,7 +29,7 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-						</li>						
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#c0about">Acerca de nosotros</a>
 						</li>
@@ -50,8 +50,8 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">
-								Cuenta
+							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-login">
+								Perfil
 								<img class="c0profile" src="./img/profile_picture.png" alt="" width="25px">
 							</a>
 						</li>
@@ -67,6 +67,9 @@
 
 	<section class="c0welcome">
 		<div class="container-fluid">
+			
+			<div id="c0spacer"></div>
+			
 			<div class="row">
 				<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3 col-xxl-4">
 					<!--
@@ -109,15 +112,22 @@
 				<div>
 					<h2 id="c0about">Sobre nosostros</h2>
 					<p>
-						Hola! Somos un grupo de amigas que empezó un pequeño emprendimiento sobre artículos para mascotas hace más de un año, con el fin de ayudar a una organización sin fines de lucro por la ayuda animal (<a href="#">GAA.sfl</a>), es por esta misma razón y debido al incremento exponencial de clientes que apoyan nuestra causa, es que podemos brindarles un mejor servicio dia a dia.
+						Hola! Somos un grupo de amigas que empezó un pequeño emprendimiento sobre artículos para
+						mascotas hace más de un año, con el fin de ayudar a una organización sin fines de lucro por la
+						ayuda animal (<a href="#">GAA.sfl</a>), es por esta misma razón y debido al incremento
+						exponencial de clientes que apoyan nuestra causa, es que podemos brindarles un mejor servicio
+						dia a dia.
 					</p>
 					<h2>
 						Nuestros productos
 					</h2>
 					<p>
-						Contamos con una amplia gama en cuanto a variedad de productos destinados a todo tipo de mascotas y gustos. Además actualmente contamos con un servicio de despacho a domicilio o retiro en tienda. Tu eliges!
+						Contamos con una amplia gama en cuanto a variedad de productos destinados a todo tipo de
+						mascotas y gustos. Además actualmente contamos con un servicio de despacho a domicilio o retiro
+						en tienda. Tu eliges!
 					</p>
 				</div>
+
 			</div>
 			<div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-3 col-xxl-4">
 				<!--
@@ -125,19 +135,130 @@
 				-->
 			</div>
 		</div>
-	</div>
 	</section>
-	
-	<div id="c0spacer">
 
-	</div>
+	<section class="c0about">
+		<div class="row">
+			<div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2 col-xxl-3">
+				<!--
+					just margin
+				-->
+			</div>
+
+			<div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 col-xxl-6">
+				<div id="c0spacer"></div>
+				<hr>
+				<div>
+					<div id="c0spacer"></div>
+					<h2 class="d-flex justify-content-center">TOP Ventas</h2>
+					<div id="c0spacer"></div>
+					
+					<div class="row">
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-3 col-xxl-3"></div>
+
+						<div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-6">
+							<div class="card text-center">
+								<div class="card-header">
+									Accesorios
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Collar para mascota - SM</h5>
+									<img class="c0product-image" src="./img/products/collar_perro.jpg" alt="">
+									<p class="card-text">Collar para mascotas tipo estandar tamaño pequeño.</p>
+									<a href="#" class="btn btn-primary">Añadir al carrito</a>
+								</div>
+								<div class="card-footer">
+									$4.990
+								</div>
+							</div>
+						</div>
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-4 col-xxl-4"></div>
+
+						<!--
+							spacer
+						-->
+						<div id="c0spacer"></div>
+						<!--
+							spacer
+						-->
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-3 col-xxl-3"></div>
+
+						<div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-6">
+							<div class="card text-center">
+								<div class="card-header">
+									Comida
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Comida para perro - Master Dog 18KG Adulto</h5>
+									<img class="c0product-image" src="./img/products/master_dog18kg.adulto.jpg" alt="">
+									<p class="card-text">Alimento para perros, etapa adulta de crecimiento. Reforzado con minerales especiales para el cuidado del pelaje y digestión.</p>
+									<a href="#" class="btn btn-primary">Añadir al carrito</a>
+								</div>
+								<div class="card-footer">
+									$21.990
+								</div>
+							</div>
+						</div>
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-4 col-xxl-4"></div>
+
+						<!--
+							spacer
+						-->
+						<div id="c0spacer"></div>
+						<!--
+							spacer
+						-->
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-3 col-xxl-3"></div>
+
+						<div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-6">
+							<div class="card text-center">
+								<div class="card-header">
+									Medicamentos
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">SinPul - Antidesparasitante de uso externo</h5>
+									<img class="c0product-image" src="./img/products/sinpul.jpg" alt="">
+									<p class="card-text">Liquido anti desparasitante de uso externo para el cuidado de agentes externos para tu mascota.</p>
+									<a href="#" class="btn btn-primary">Añadir al carrito</a>
+								</div>
+								<div class="card-footer">
+									$3.990
+								</div>
+							</div>
+						</div>
+
+						<div class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-4 col-xxl-4"></div>
+						
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2 col-xxl-3">
+				<!--
+					just margin
+				-->
+			</div>
+		</div>
+	</section>
+
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+
 
 	<footer class="c0footer fixed-bottom mt-5">
 		<div class="container-fluid bg-light text-dark mt-5">
 			<div class="row">
 				<hr>
 				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
-					
+
 				</div>
 				<div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
 					<a class="" href="">
@@ -150,16 +271,76 @@
 						<i class="bicon bicon-telephone"></i>
 					</a>
 				</div>
-				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 d-flex justify-content-end c0version">
-					version 1.0feb22 no codename.
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
+
 				</div>
 			</div>
-			
+			<div class="row">
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
+
+				</div>
+				<div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
+					<div class="d-flex justify-content-center c0version">
+						<p>version 1.0feb22 no codename.</p>
+					</div>
+				</div>
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
+				</div>
+			</div>
+
 		</div>
 	</footer>
 
 	<div id="c0spacer">
 
+	</div>
+
+	<div class="modal fade" id="modal-login">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Iniciar sesión</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<form class="shadow p-3 mb-2 bg-white rounded">
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"
+								aria-describedby="emailHelp">
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+							<input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Recordarme</label>
+						</div>
+						<div class="mb-3">
+							<button type="submit" class="btn btn-primary w-100">Entrar</button>
+						</div>
+						<div class="mb-3">
+							<h5 class="d-flex justify-content-center">¿Aún no tienes cuenta? Registrate!</h5>
+							<p class="d-flex justify-content-center">
+								<a href="">Crear una cuenta</a>
+							</p>
+						</div>
+						<hr>
+						<div class="col-12 d-flex justify-content-center">
+							<p>
+								<a href="">Tengo problemas con mi inicio de sesión.</a>
+							</p>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
 	</div>
 
 	<script src="./js/c_main.js"></script>
