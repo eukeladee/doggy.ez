@@ -1,0 +1,76 @@
+/* custom fonts */
+
+@font-face {
+    font-family: "bifont";
+    src: url(../fonts/bootstrap-icons.woff);
+}
+
+@font-face {
+    font-family: "Inter-Black";
+    src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: "Source-Regular";
+    src: url(../fonts/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+/* custom styles / login view */
+
+/* custom styles / main view */
+
+.c0header, p {
+    font-family: Ubuntu-Regular;
+}
+
+.c0titlenav {
+    font-family: Inter-Black;
+}
+
+.c0profile {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+
+.nav-item {
+    font-size: 1.15em;
+}
+
+.c0maintitle {
+    font-family: Lobster;
+    font-size: 4em;
+    background: -webkit-linear-gradient(rgb(208, 47, 240), rgb(60, 226, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.c0jumboimage {
+    max-width: 600px;
+    position: relative;
+}
+
+.c0mainimage {
+    border-bottom: solid 3px;
+}
+
+.c0version {
+    font-family: Source-Regular;
+    font-size: .7em;
+}
+
+#c0spacer {
+    min-height: 5vh;
+}
+

@@ -1,0 +1,31 @@
+.bicon {
+    font-family: bifont;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.25em;
+}
+
+.bicon-arrow-right-circle-white::before {
+    content: '\F134';
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.bicon-facebook::before {
+    content: '\F344';
+    color: blue;
+}
+
+.bicon-instagram::before {
+    content: '\F437';
+    color: red;
+}
+
+.bicon-telephone::before {
+    content: '\F5C1';
+    color: green    ;
+}
+
+.c0footer a {
+    text-decoration: none;
+}
