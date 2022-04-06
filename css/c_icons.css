@@ -5,6 +5,13 @@
     font-size: 1.25em;
 }
 
+.bicon-custom {
+    font-family: bifont;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
 .bicon-arrow-right-circle-white::before {
     content: '\F134';
     color: #ffffff;
@@ -24,6 +31,15 @@
 .bicon-telephone::before {
     content: '\F5C1';
     color: green    ;
+}
+
+.bicon-logout::before {
+    content: '\F1C3';
+}
+
+.bicon-cart::before {
+    content: '\F242';
+    color: #000000;
 }
 
 .c0footer a {
