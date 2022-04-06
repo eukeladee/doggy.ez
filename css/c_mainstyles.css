@@ -37,6 +37,17 @@
     font-family: Inter-Black;
 }
 
+.c0titleform {
+    border-radius: 50px;
+    background-color: #000;
+}
+
+.c0titlelogin {
+    font-family: Inter-Black;
+    font-size: 1.9em;
+    color: #ffffff;
+}
+
 .c0profile {
     border-radius: 50%;
     border-style: solid;
