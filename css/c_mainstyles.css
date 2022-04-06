@@ -27,6 +27,11 @@
 
 /* custom styles / login view */
 
+.c0loginform {
+    border-radius: 35px;
+    
+}
+
 /* custom styles / main view */
 
 .c0header, p {
@@ -84,7 +89,7 @@
 
 .c0product-image {
     width: 100%;
-    height: 25em;
+    height: 15em;
 }
 
 #c0spacer {
@@ -157,4 +162,15 @@
     font-size: 2.3em;
     align-items: center;
     text-align: center
+}
+
+.c0products-navbar {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.c0prod-navbar-active {
+    font-size: 1.5em;
 }

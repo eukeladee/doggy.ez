@@ -8,6 +8,9 @@
         <p><em>(Para los regalones del hogar)</em></p>
         <br />
         <a href="#documentación"><strong>Explorar los documentos»</strong></a>
+        <strong>
+          <p>Ver Demo <a href="https://eukeladee.github.io/doggy.ez/">www.doggy.ez</a></p>
+        </strong>
         <br />
         <br />
         <a href="#">Reportar error</a>
@@ -36,18 +39,23 @@
 - [ ] Historial de compras
 - [ ] Opcion de poder aplicar descuento en base a cupones, codigos promocionales, entre otros
 
+### Presentación
+- [ ] Presentación con énfasis de diseño. -clean ui-
+- [ ] 
+
 ### Opcionales
 - [ ] Añadir página de resumen para GAA.sfl
 
 ## Tabla de Contenidos
 - [Por Hacer](#por-hacer)
-  - [Mantención general de código.](#mantención-general-de-código)
-  - [Pertenecientes al caso](#pertenecientes-al-caso)
-  - [Opcionales](#opcionales)
+	- [Mantención general de código.](#mantención-general-de-código)
+	- [Pertenecientes al caso](#pertenecientes-al-caso)
+	- [Presentación](#presentación)
+	- [Opcionales](#opcionales)
 - [Tabla de Contenidos](#tabla-de-contenidos)
 - [Acerca](#acerca)
-  - [Organización de archivos](#organización-de-archivos)
-  - [Accciones del servidor](#accciones-del-servidor)
+	- [Organización de archivos](#organización-de-archivos)
+	- [Accciones del servidor](#accciones-del-servidor)
 - [Comienzo](#comienzo)
 - [Uso](#uso)
 - [Documentación](#documentación)
@@ -58,6 +66,49 @@
 ## Acerca
 
 ### Organización de archivos
+
+	|   dev_notes
+	|   ET121_3A_PGY3121.pdf
+	|   index.html
+	|   readme.md
+	|   register.html
+	|
+	+---css
+	|       bootstrap.min.css
+	|       c_icons.css
+	|       c_mainstyles.css
+	|
+	+---demo
+	|       logged.html
+	|       products.html
+	|
+	+---docs
+	|       license.materialize
+	|       materialize.readme.md
+	|
+	+---fonts
+	|       bootstrap-icons.woff
+	|       Inter-Black.ttf
+	|       Lobster-Regular.ttf
+	|       SourceCodePro-Regular.ttf
+	|       Ubuntu-Regular.ttf
+	|
+	+---img
+	|   |   authed.png
+	|   |   favicon.ico
+	|   |   pet1.png
+	|   |   pet2.jpg
+	|   |   pet3.jpg
+	|   |   profile_picture.png
+	|   |
+	|   \---products
+	|           collar_perro.jpg
+	|           master_dog18kg.adulto.jpg
+	|           sinpul.jpg
+	|
+	\---js
+			bootstrap.bundle.min.js
+			c_main.js
 
 ### Accciones del servidor
 
