@@ -1,47 +1,52 @@
 .bicon {
-    font-family: bifont;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 1.25em;
+	font-family: bifont;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.25em;
 }
 
 .bicon-custom {
-    font-family: bifont;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 1.3em;
+	font-family: bifont;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.3em;
 }
 
 .bicon-arrow-right-circle-white::before {
-    content: '\F134';
-    color: #ffffff;
-    font-size: 1.4em;
+	content: '\F134';
+	color: #ffffff;
+	font-size: 1.4em;
 }
 
 .bicon-facebook::before {
-    content: '\F344';
-    color: blue;
+	content: '\F344';
+	color: blue;
 }
 
 .bicon-instagram::before {
-    content: '\F437';
-    color: red;
+	content: '\F437';
+	color: red;
 }
 
 .bicon-telephone::before {
-    content: '\F5C1';
-    color: green    ;
+	content: '\F5C1';
+	color: green;
 }
 
 .bicon-logout::before {
-    content: '\F1C3';
+	content: '\F1C3';
 }
 
 .bicon-cart::before {
-    content: '\F242';
-    color: #000000;
+	content: '\F242';
+	color: #000000;
+}
+
+.bicon-github::before {
+	content: '\F3ED';
+	color: #000;
 }
 
 .c0footer a {
-    text-decoration: none;
+	text-decoration: none;
 }

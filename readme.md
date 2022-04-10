@@ -25,6 +25,13 @@
 - [ ] Mejorar estructura de organización
 - [ ] Nomenclatura de archivos ./css/
 
+### Mejoras
+- [ ] href c0about como referencia a div invisible.
+- [ ] Vista 'Acerca de nosotros' debe ir dentro de la vista 'Inicio'
+- [ ] Referencias en todas las vistas (a href="?")
+- [ ] Agregar '.editorconfig' a la raíz del proyecto para la estandarización de codificación.
+- [ ] Botón 'Ir al inicio' e 'Ir al Final'
+
 ### Pertenecientes al caso
 - [x] Estilo general de la página
 - [x] Login y Register
@@ -33,9 +40,9 @@
 - [x] Modal de perfil
 - [x] Buscar producto en vista principal
 - [x] Indicar el Stock de productos por ítem
-- [ ] Agregar sección de carrito
+- [x] Agregar sección de carrito
 - [ ] Agregar sección de despacho + seguimiento y búsqueda por código generado por la compra
-- [ ] Donación para la fundación de ayuda animal (GAA.sfl / Grupo de Ayuda Animalista.sin fines de lucro) para otorgar descuento del 5% a la venta total
+- [x] Donación para la fundación de ayuda animal (GAA.sfl / Grupo de Ayuda Animalista.sin fines de lucro) para otorgar descuento del 5% a la venta total
 - [ ] Historial de compras
 - [ ] Opcion de poder aplicar descuento en base a cupones, codigos promocionales, entre otros
 
@@ -49,6 +56,7 @@
 ## Tabla de Contenidos
 - [Por Hacer](#por-hacer)
 	- [Mantención general de código.](#mantención-general-de-código)
+	- [Mejoras](#mejoras)
 	- [Pertenecientes al caso](#pertenecientes-al-caso)
 	- [Presentación](#presentación)
 	- [Opcionales](#opcionales)

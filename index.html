@@ -16,6 +16,9 @@
 </head>
 
 <body>
+
+	<div id="inicio"></div>
+
 	<header class="c0header fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
@@ -27,28 +30,31 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#c0about">Acerca de nosotros</a>
-						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">
-								Productos
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Comida</a></li>
-								<li><a class="dropdown-item" href="#">Juguetes</a></li>
-								<li><a class="dropdown-item" href="#">Camas</a></li>
-								<li><a class="dropdown-item" href="#">Medicamentos</a></li>
-								<li><a class="dropdown-item" href="#">Accesorios</a></li>
-								<li><a class="dropdown-item" href="#">Todo</a></li>
-								<div class="dropdown-divider"></div>
-								<li><a class="dropdown-item" href="#">Delivery</a></li>
-							</ul>
-						</li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./index.html#inicio">Inicio</a></li>
+                                <li><a class="dropdown-item" href="./index.html#acerca">Acerca de Nosotros</a></li>
+                            </ul>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Comida</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Juguetes</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Camas</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Medicamentos</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Accesorios</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Delivery</a></li>
+                            </ul>
+                        </li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-login">
 								Perfil
@@ -86,6 +92,9 @@
 						</div>
 						<div class="col-12 d-flex justify-content-center mx-auto align-content-center c0jumboimage">
 							<img src="./img/pet1.png" class="img-fluid c0mainimage" alt="Responsive image">
+
+							<div id="acerca"></div>
+
 						</div>
 					</div>
 				</div>
@@ -97,6 +106,9 @@
 			</div>
 		</div>
 	</section>
+
+
+	
 
 	<section class="c0about">
 		<div class="row">
@@ -164,7 +176,9 @@
 								</div>
 								<div class="card-body">
 									<h5 class="card-title">Collar para mascota - SM</h5>
-									<img class="c0product-image" src="./img/products/collar_perro.jpg" alt="">
+									<div class="c0product-container">
+										<img class="c0product-image" src="./img/products/collar_perro.jpg" alt="">
+									</div>
 									<p class="card-text">Collar para mascotas tipo estandar tamaño pequeño.</p>
 									<a href="#" class="btn btn-primary">Añadir al carrito</a>
 								</div>

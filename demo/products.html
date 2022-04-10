@@ -2,248 +2,738 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/c_mainstyles.css">
-    <link rel="stylesheet" href="../css/c_icons.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/c_mainstyles.css">
+	<link rel="stylesheet" href="../css/c_icons.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 
-    <link rel="shortcut icon" type="img/png" sizes="16x16" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" type="img/png" sizes="16x16" href="../img/favicon.ico" type="image/x-icon">
 
-    <title>Doggy.ez</title>
+	<title>Doggy.ez</title>
 </head>
 
 <body>
 
-    <!--
+	<!--
         header section
     -->
-    <header class="c0header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid ">
-                <a class="navbar-brand c0titlenav" href="#">Doggy Shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#c0about">Acerca de nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Comida</a></li>
-                                <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                                <li><a class="dropdown-item" href="#">Camas</a></li>
-                                <li><a class="dropdown-item" href="#">Medicamentos</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#">Todo</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Delivery</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#offcanvasExample" data-bs-toggle="offcanvas" class="nav-link">
-                                <img class="c0profile" src="../img/authed.png" alt="" width="25px">
-                                <span class="badge bg-danger">+1</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="producto" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--
+	<header class="c0header fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid ">
+				<a class="navbar-brand c0titlenav" href="./logged.html">Doggy Shop</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Home
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="./logged.html#inicio">Inicio</a></li>
+								<li><a class="dropdown-item" href="./logged.html#acerca">Acerca de Nosotros</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Productos
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="./products.html#comida">Comida</a></li>
+								<li><a class="dropdown-item" href="./products.html#juguetes">Juguetes</a></li>
+								<li><a class="dropdown-item" href="./products.html#camas">Camas</a></li>
+								<li><a class="dropdown-item" href="./products.html#medicamentos">Medicamentos</a></li>
+								<li><a class="dropdown-item" href="./products.html#accesorios">Accesorios</a></li>
+								<div class="dropdown-divider"></div>
+								<li><a class="dropdown-item" href="./delivery.html">Delivery</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#offcanvasExample" data-bs-toggle="offcanvas" class="nav-link">
+								<img class="c0profile" src="../img/authed.png" alt="" width="25px">
+								<span class="badge bg-danger">+1</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#offcanvasCart" data-bs-toggle="offcanvas" class="nav-link">
+								<i class="bicon bicon-cart"></i>
+							</a>
+						</li>
+
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="producto" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--
         header section
     -->
 
 
-    <div id="c0spacer"></div>
-    <div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
 
 
-    <!--
-        main section
-    -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <nav class="navbar navbar-expand-xl c0products-navbar shadow">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-center" id="colNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Comida</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Juguetes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Camas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Medicamentos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Accesorios</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-1"></div>
-        </div>
-    </div>
-    <!--
+	<!--
         main section
     -->
 
-    <div id="c0spacer"></div>
-    <div id="c0spacer"></div>
-    <div id="c0spacer"></div>
+	<div class="container-fluid	">
+		<div class="row">
+			<div class="col-lg-1 col-xl-1 col-xxl-2"></div> <!-- just margin -->
+
+			<!--
+				left list
+			-->
+			<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+				<div class="list-group mb-4 c0product-list">
+					<a href="#comida"><button type="button" class="list-group-item list-group-item-action"
+							aria-current="true">Comida</button></a>
+					<a href="#juguetes"><button type="button"
+							class="list-group-item list-group-item-action">Juguetes</button></a>
+					<a href="#camas"><button type="button"
+							class="list-group-item list-group-item-action">Camas</button></a>
+					<a href="#medicamentos"><button type="button"
+							class="list-group-item list-group-item-action">Medicamentos</button></a>
+					<a href="#accesorios"><button type="button"
+							class="list-group-item list-group-item-action">Accesorios</button></a>
+				</div>
+				<div class="list-group mb-4">
+					<a href="" class="c0delivery-link">Delivery</a>
+				</div>
+			</div>
+			<!--
+				left list
+			-->
+
+			<!--
+				card space grid
+			-->
+			<div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7 col-xxl-5">
+
+				<!-- first section comida -->
+
+				<div id="comida"></div>
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Comida
+							</div>
+							<div class="card-body">
+								<h5>Alimento para perros - Master Dog Carne Adulto 18KG</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/master_dog18kg.adulto.jpg" alt="">
+								</div>
+								<p class="card-text">Alimento para perros en su etapa adulta de crecimiento, ideal para
+									mantejer un pelaje suave resistente, además de ayudar en la digestión de minerales
+									esenciales.</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$20.990
+								<div>
+									Stock disponible : 2
+								</div>
+							</div>
+
+						</div>
 
 
-    <!--
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Comida
+							</div>
+							<div class="card-body">
+								<h5>Alimento para perros - Fit Formula 20KG</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/fit-formulaperro.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Alimento para canes, potenciado con Omega 3 para el fortalecimiento de la flora
+									intestinal además de mejorar la energía de su perro.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$25.990
+								<div>
+									Stock disponible : 6
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Comida
+							</div>
+							<div class="card-body">
+								<h5>Alimento Humedo para Gatos - Whiskas 85gr</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/whiskas-humedo.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Comida en formato Humedo para Gatos, ideal como suplemento a su comida principal ya
+									que ayuda en la digestión de los minerales esenciales.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$6.990
+								<div>
+									Stock disponible : 7
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Comida
+							</div>
+							<div class="card-body">
+								<h5>Alimento para Hamster - Tropifit Hamster 500gr</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/alim-hamster.jpeg" alt="">
+								</div>
+								<p class="card-text">
+									Alimento para hamsters, comida con minerales importantes como Omega 3, Vitamina D y
+									mucho amor.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$7.990
+								<div>
+									Stock disponible : 6
+								</div>
+							</div>
+
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<!-- first section comida -->
+
+				<!-- second section juguetes -->
+
+				<div id="juguetes"></div>
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Juguetes
+							</div>
+							<div class="card-body">
+								<h5>Laberinto Para Hamster</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/juguete_hamster.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Compacto laberinto para hamsters diseñado para que puedan divertirse durante horas
+									sin sufrir de algún paro cardiorespiratorio.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$6.990
+								<div>
+									Stock disponible : 4
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Juguetes
+							</div>
+							<div class="card-body">
+								<h5>Juguete para Cachorros</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/juguete_perro.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Juguete de cuerda para perros en etapa de crecimiento. Jueguete con alta
+									flexibilidad y durabilidad.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$3.990
+								<div>
+									Stock disponible : 2
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+
+					</div>
+				</div>
+
+				<!-- second section juguetes -->
+
+				<!-- third section camas -->
+
+				<div id="camas"></div>
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Camas
+							</div>
+							<div class="card-body">
+								<h5>Cama para Perros - Talla M</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/cama_perro.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Cama certificada con la ISO 123 para entregar la mejor comodidad posible a tu perro.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$11.990
+								<div>
+									Stock disponible : 2
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Camas
+							</div>
+							<div class="card-body">
+								<h5>Cama para Gatos con Juguete colgante</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/cama_gato.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Cama rebestida con tela que retiene el calor además de incluir un juguete colgante
+									para la entretención de tu felino.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$15.990
+								<div>
+									Stock disponible : 1
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- third section camas -->
+
+				<!-- fourh section medicamentos -->
+
+				<div id="medicamentos"></div>
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Medicamentos
+							</div>
+							<div class="card-body">
+								<h5>SinPul - Desparasitante Externo</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/sinpul.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Antidesparasitante en forma de líquido incoloro que no mancha y que ayuda al combate
+									con agentes parasitarios.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$5.990
+								<div>
+									Stock disponible : 5
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Medicamentos
+							</div>
+							<div class="card-body">
+								<h5>Collar AntiPulgas para Gatos</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/collar_antipulgas_gato.jpg"
+										alt="">
+								</div>
+								<p class="card-text">
+									Collar rebestido de una sustancia que elimina el 99.5% de las pulgas y garrapatas
+									que puedan subirse a tu mascota.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$13.990
+								<div>
+									Stock disponible : 5
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- fourh section medicamentos -->
+
+				<!-- fifth section accesorios -->
+
+				<div id="accesorios"></div>
+
+				<div class="row">
+
+					<div class="card-group">
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Accesorios
+							</div>
+							<div class="card-body">
+								<h5>Placa para nombre - Estilo Perro</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/placa_perro.png" alt="">
+								</div>
+								<p class="card-text">
+									Placa de Acero inoxidable para grabar el nombre de tu mascota. Especial para Perros
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$990
+								<div>
+									Stock disponible : 15
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card text-center border-dark mb-3">
+							<!-- card 3 -->
+
+							<div class="card-header">
+								Accesorios
+							</div>
+							<div class="card-body">
+								<h5>Cortauñas para perro.</h5>
+								<div class="c0product-container">
+									<img class="c0product-image" src="../img/products/corta_una_perro.jpg" alt="">
+								</div>
+								<p class="card-text">
+									Cortador de uña para perro hecho a partir de una aleacion de acero inoxidable.
+								</p>
+								<a href="#" class="btn btn-primary">Añadir al carrito</a>
+							</div>
+							<div class="card-footer">
+								$5.990
+								<div>
+									Stock disponible : 2
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- fifth section accesorios -->
+
+
+			</div>
+			<!--
+				card space grid
+			-->
+
+
+			<div class="col-lg-1 col-xl-1 col-xxl-2"></div> <!-- just margin -->
+		</div>
+
+	</div>
+	</div>
+
+	<!--
+        main section
+    -->
+
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+	<div id="c0spacer"></div>
+
+
+	<!--
         footer section
     -->
-    <footer class="c0footer fixed-bottom mt-5">
-        <div class="row">
+	<footer class="c0footer fixed-bottom mt-5">
+		<div class="row">
 
-            <!--
+			<!--
                 cart float icon
                 WARN. not an stable element yet.
-            -->
-            <div class="col-8 col-sm-9 col-md-10"></div>
+            
+			<div class="col-8 col-sm-9 col-md-10"></div>
 
-            <div class="col-4 col-sm-3 col-md-2">
-                <div class="c0cart-float position-sticky shadow-lg">
-                    <a href="" class="">
-                        <span class="bicon-custom bicon-cart"></span>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <!--
+			<div class="col-4 col-sm-3 col-md-2">
+				<div class="c0cart-float position-sticky shadow-lg">
+					<a href="" class="">
+						<span class="bicon-custom bicon-cart"></span>
+						<span
+							class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+							<span class="visually-hidden">New alerts</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			
                 cart float icon
             -->
 
-        </div>
-        <div class="container-fluid bg-light text-dark mt-5">
-            <div class="row">
-                <hr>
-                <div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
+		</div>
+		<div class="container-fluid bg-light text-dark mt-5">
+			<div class="row">
+				<hr>
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
 
-                </div>
-                <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
-                    <a class="" href="">
-                        <i class="bicon bicon-facebook"></i>
-                    </a>
-                    <a class="mx-5" href="">
-                        <i class="bicon bicon-instagram"></i>
-                    </a>
-                    <a href="">
-                        <i class="bicon bicon-telephone"></i>
-                    </a>
-                </div>
-                <div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
+				</div>
+				<div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
+					<a class="" href="">
+						<i class="bicon bicon-facebook"></i>
+					</a>
+					<a class="mx-5" href="">
+						<i class="bicon bicon-instagram"></i>
+					</a>
+					<a href="">
+						<i class="bicon bicon-telephone"></i>
+					</a>
+				</div>
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4">
 
-                </div>
-                <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
-                    <div class="d-flex justify-content-center c0version">
-                        <p>V0.1feb22, release pre-build / no codename.</p>
-                    </div>
-                </div>
-                <div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
-                </div>
-            </div>
-
-        </div>
-    </footer>
-    <!--
+				</div>
+				<div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center">
+					<div class="d-flex justify-content-center c0version">
+						<p>made width love by eukelade. at <a href="https://github.com/eukeladee/doggy.ez">doggy.ez
+								repo</a></p>
+					</div>
+				</div>
+				<div class="col-sm-0 col-md-1 col-lg-3 col-xl-4 col-xxl-4 c0version">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--
         footer section
     -->
 
-    <div id="c0spacer"></div>
+	<div id="c0spacer"></div>
 
 
-    <!--
-        off canvas, not an <<always show>> element
-    -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <div class="row">
-                    <div class="col-12 justify-content-center align-content-center text-center">
-                        <img src="../img/authed.png" alt="" width="55px" class="rounded img-thumbnail">
-                        <p class="c0code">usuario@correo.cl</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="mt-3 w-100 d-flex">
-                        <a href="" class="c0offcanvas-button w-100">Cuenta y configuración</a>
-                    </div>
-                    <div class="mt-3 w-100 d-flex">
-                        <a href="" class="c0offcanvas-button w-100">Historial de Compras</a>
-                    </div>
-                    <div class="mt-3 w-100 d-flex">
-                        <a href="" class="c0offcanvas-button w-100">Reclamos y Sugerencias</a>
-                    </div>
-                    <div class="mt-3 w-100 d-flex">
-                        <a href="" class="c0offcanvas-button w-100">Subscripción</a>
-                    </div>
-                    <div class="mt-3 w-100 d-flex">
-                        <a href="" class="c0offcanvas-button w-100">Versión de servidor</a>
-                    </div>
-                </div>
-                <div id="c0spacer"></div>
-                <hr>
-                <div class="mt-3 col-12 d-flex justify-content-center align-content-center">
-                    <div class="d-flex w-75  c0offcanvas-bottom mb-5">
-                        <a href="" class="c0offcanvas-exitbutton w-100">
-                            <span class="bicon-custom bicon-logout"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--
+	<!--
         off canvas, not an <<always show>> element
     -->
 
-        <script src="../js/c_main.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+
+	<!-- off canvas for cart -->
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartShop">
+		<div class="offcanvas-header">
+
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div>
+				<div class="row">
+					<div class="col-12 justify-content-center align-content-center text-center">
+						<p class="c0cart-offcanvas-title">Carrito de Compras</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-action " aria-current="true">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Comida Para Perros</h5>
+								<small>$20.990</small>
+							</div>
+						</a>
+						<a href="#" class="list-group-item list-group-item-action " aria-current="true">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Antidesparasitante</h5>
+								<small>$5.990</small>
+							</div>
+						</a>
+						<a href="#" class="list-group-item list-group-item-action " aria-current="true">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Accesorio para Gatos</h5>
+								<small>$1.990</small>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div id="c0spacer"></div>
+
+				<div class="d-flex">
+					<h4>Total a pagar:</h4>
+				</div>
+
+				<div class="d-flex justify-content-end">
+					<h6>$28.970</h6>
+				</div>
+
+				<div class="col-12 d-flex justify-content-center">
+					<p><a href="">Aplicar descuento por fundación de ayuda</a></p>
+				</div>
+
+				<div id="c0spacer"></div>
+
+
+				<hr>
+				<div class="col-12 d-flex justify-content-center align-content-center">
+					<div class="mt-3 col-12 d-flex justify-content-center align-content-center">
+						<div class="d-flex w-75 mb-5">
+							<a href="#" class="c0paybutton w-100">
+								<p class="c0paybutton-text">COMPRAR</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- offcanvas for user -->
+
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div>
+				<div class="row">
+					<div class="col-12 justify-content-center align-content-center text-center">
+						<img src="../img/authed.png" alt="" width="55px" class="rounded img-thumbnail">
+						<p class="c0code">usuario@correo.cl</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="mt-3 w-100 d-flex">
+						<a href="" class="c0offcanvas-button w-100">Cuenta y configuración</a>
+					</div>
+					<div class="mt-3 w-100 d-flex">
+						<a href="" class="c0offcanvas-button w-100">Historial de Compras</a>
+					</div>
+					<div class="mt-3 w-100 d-flex">
+						<a href="" class="c0offcanvas-button w-100">Reclamos y Sugerencias</a>
+					</div>
+					<div class="mt-3 w-100 d-flex">
+						<a href="" class="c0offcanvas-button w-100">Subscripción</a>
+					</div>
+					<div class="mt-3 w-100 d-flex">
+						<a href="" class="c0offcanvas-button w-100">Versión de servidor</a>
+					</div>
+				</div>
+				<div id="c0spacer"></div>
+				<hr>
+				<div class="mt-3 col-12 d-flex justify-content-center align-content-center">
+					<div class="d-flex w-75  c0offcanvas-bottom mb-5">
+						<a href="../index.html" class="c0offcanvas-exitbutton w-100">
+							<span class="bicon-custom bicon-logout"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+        off canvas, not an <<always show>> element
+    -->
+
+	<script src="../js/c_main.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
