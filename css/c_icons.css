@@ -47,6 +47,11 @@
 	color: #000;
 }
 
+.bicon-danger-octagon::before {
+	content: '\F336';
+	color: rgb(255, 0, 0);
+}
+
 .c0footer a {
 	text-decoration: none;
 }

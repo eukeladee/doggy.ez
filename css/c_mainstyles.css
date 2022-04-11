@@ -88,12 +88,12 @@
 }
 
 .c0product-container {
-    height: 150 c0em;
+    height: 180px;
 }
 
 .c0product-image {
     width: 185px;
-    height: 300px;
+    height: 160px;
 }
 
 #c0spacer {
@@ -232,4 +232,31 @@
     font-family: Inter-Black;
     font-size: 1.2em;
     padding-top: 10px;
+}
+
+.c0deliv-title {
+    font-family: Inter-Black;
+    font-size: 1.6em;
+}
+
+.c0deliv-search {
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.c0deliv-search:hover {
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 10px #c3c3c3;
+    transition: .3s;
+}
+
+.c0del-subtitle {
+    font-weight: bold;
+    font-size: 1.25em;
 }

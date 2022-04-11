@@ -48,7 +48,6 @@
 
 ### Presentación
 - [ ] Presentación con énfasis de diseño. -clean ui-
-- [ ] 
 
 ### Opcionales
 - [ ] Añadir página de resumen para GAA.sfl
